@@ -1,0 +1,39 @@
+h1,
+h2 {
+  font-family: Lato;
+}
+
+[aria-label] {
+  position: relative;
+}
+
+.kwd.active {
+  border: 1px dashed #355789 !important;
+  padding: 3.5px;
+}
+
+.kwd[data-delimt]:not(:last-child)::after {
+  content: attr(data-delimt) !important;
+}
+
+.kwd[aria-label].active::before {
+  display: block;
+  content: attr(aria-label);
+  position: absolute;
+  top: -4px;
+  left: 7px;
+  z-index: 5000;
+  pointer-events: none;
+  padding: 0 5px;
+  line-height: 7px;
+  white-space: nowrap;
+  text-decoration: none;
+  text-indent: 0;
+  overflow: visible;
+  font-size: 0.75em;
+  font-weight: normal;
+  color: #003a90;
+  background-color: white;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
