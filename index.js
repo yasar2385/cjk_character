@@ -1,6 +1,6 @@
 // Import stylesheets
 import './style.css';
-
+//https://stackoverflow.com/questions/21109011/javascript-unicode-string-chinese-character-but-no-punctuation
 // Write Javascript code!
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
